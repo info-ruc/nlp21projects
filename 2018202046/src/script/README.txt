@@ -7,6 +7,9 @@ python train_bert_gcn.py
 .
 ├── README.txt                      # readme
 ├── build_graph.py                  # buid grah
+├── checkpoint
+│   └── roberta-base_gcn_20ng
+│       └── training.log            # training log
 ├── data                            # data
 │   ├── 20ng.txt
 │   └── corpus
