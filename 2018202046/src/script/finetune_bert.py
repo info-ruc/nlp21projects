@@ -15,7 +15,6 @@ parser.add_argument('--max_length', type=int, default=128)
 parser.add_argument('--batch_size', type=int, default=128)
 parser.add_argument('--nb_epochs', type=int, default=60)
 parser.add_argument('--bert_lr', type=float, default=1e-4)
-parser.add_argument('--dataset', default='20ng')
 parser.add_argument('--bert_init', type=str, default='roberta-base')
 parser.add_argument('--checkpoint_dir', default=None)
 
@@ -25,9 +24,9 @@ max_length = args.max_length
 batch_size = args.batch_size
 nb_epochs = args.nb_epochs
 bert_lr = args.bert_lr
-dataset = args.dataset
 bert_init = args.bert_init
 checkpoint_dir = args.checkpoint_dir
+dataset = '20ng'
 if checkpoint_dir is None:
     ckpt_dir = './checkpoint/{}_{}'.format(bert_init, dataset)
 else:

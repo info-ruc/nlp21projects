@@ -5,25 +5,11 @@ from nltk.corpus import wordnet as wn
 from utils import clean_str, loadWord2Vec
 import sys
 
-# if len(sys.argv) != 2:
-# 	sys.exit("Use: python remove_words.py <dataset>")
-
-# datasets = ['20ng', 'R8', 'R52', 'ohsumed', 'mr']
-# dataset = sys.argv[1]
-
-# if dataset not in datasets:
-# 	sys.exit("wrong dataset name")
 dataset = '20ng'
 
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
-print(stop_words)
-
-# Read Word Vectors
-# word_vector_file = 'data/glove.6B/glove.6B.200d.txt'
-# vocab, embd, word_vector_map = loadWord2Vec(word_vector_file)
-# word_embeddings_dim = len(embd[0])
-# dataset = '20ng'
+# print(stop_words)
 
 doc_content_list = []
 f = open('data/corpus/' + dataset + '.txt', 'rb')
