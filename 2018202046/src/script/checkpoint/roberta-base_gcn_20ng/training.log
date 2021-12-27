@@ -1,0 +1,62 @@
+arguments:
+Namespace(batch_size=64, bert_init='roberta-base', bert_lr=1e-05, checkpoint_dir=None, dataset='20ng', dropout=0.5, gcn_layers=2, gcn_lr=0.001, gcn_model='gcn', heads=8, m=0.7, max_length=128, n_hidden=200, nb_epochs=50, pretrained_bert_ckpt='./checkpoint/roberta-base_20ng/checkpoint.pth')
+checkpoints will be saved in ./checkpoint/roberta-base_gcn_20ng
+graph information:
+Graph(num_nodes=61603, num_edges=26990597,
+      ndata_schemes={'input_ids': Scheme(shape=(128,), dtype=torch.int64), 'attention_mask': Scheme(shape=(128,), dtype=torch.int64), 'label': Scheme(shape=(), dtype=torch.int64), 'train': Scheme(shape=(), dtype=torch.float32), 'val': Scheme(shape=(), dtype=torch.float32), 'test': Scheme(shape=(), dtype=torch.float32), 'label_train': Scheme(shape=(), dtype=torch.int64), 'cls_feats': Scheme(shape=(768,), dtype=torch.float32)}
+      edata_schemes={'edge_weight': Scheme(shape=(), dtype=torch.float32)})
+Epoch: 1  Train acc: 0.9775 loss: 0.0880  Val acc: 0.9372 loss: 0.2337  Test acc: 0.8878 loss: 0.4597
+New checkpoint
+Epoch: 2  Train acc: 0.9761 loss: 0.0674  Val acc: 0.9390 loss: 0.2239  Test acc: 0.8938 loss: 0.4922
+New checkpoint
+Epoch: 3  Train acc: 0.9757 loss: 0.0617  Val acc: 0.9381 loss: 0.2526  Test acc: 0.8879 loss: 0.5790
+Epoch: 4  Train acc: 0.9744 loss: 0.0587  Val acc: 0.9381 loss: 0.2604  Test acc: 0.8882 loss: 0.5804
+Epoch: 5  Train acc: 0.9710 loss: 0.0586  Val acc: 0.9381 loss: 0.2911  Test acc: 0.8883 loss: 0.6117
+Epoch: 6  Train acc: 0.9700 loss: 0.0577  Val acc: 0.9390 loss: 0.3327  Test acc: 0.8812 loss: 0.6564
+Epoch: 7  Train acc: 0.9749 loss: 0.0500  Val acc: 0.9390 loss: 0.2856  Test acc: 0.8893 loss: 0.6339
+Epoch: 8  Train acc: 0.9708 loss: 0.0547  Val acc: 0.9363 loss: 0.3253  Test acc: 0.8801 loss: 0.7060
+Epoch: 9  Train acc: 0.9784 loss: 0.0404  Val acc: 0.9381 loss: 0.2876  Test acc: 0.8899 loss: 0.6848
+Epoch: 10  Train acc: 0.9782 loss: 0.0395  Val acc: 0.9399 loss: 0.3013  Test acc: 0.8918 loss: 0.6719
+New checkpoint
+Epoch: 11  Train acc: 0.9753 loss: 0.0413  Val acc: 0.9443 loss: 0.3243  Test acc: 0.8870 loss: 0.7029
+New checkpoint
+Epoch: 12  Train acc: 0.9609 loss: 0.0663  Val acc: 0.9248 loss: 0.3913  Test acc: 0.8729 loss: 0.8339
+Epoch: 13  Train acc: 0.9784 loss: 0.0390  Val acc: 0.9425 loss: 0.2947  Test acc: 0.8899 loss: 0.7145
+Epoch: 14  Train acc: 0.9756 loss: 0.0432  Val acc: 0.9381 loss: 0.3203  Test acc: 0.8883 loss: 0.7252
+Epoch: 15  Train acc: 0.9766 loss: 0.0407  Val acc: 0.9390 loss: 0.3319  Test acc: 0.8902 loss: 0.7404
+Epoch: 16  Train acc: 0.9758 loss: 0.0415  Val acc: 0.9337 loss: 0.3536  Test acc: 0.8903 loss: 0.7418
+Epoch: 17  Train acc: 0.9774 loss: 0.0387  Val acc: 0.9416 loss: 0.3527  Test acc: 0.8875 loss: 0.7667
+Epoch: 18  Train acc: 0.9806 loss: 0.0335  Val acc: 0.9408 loss: 0.3462  Test acc: 0.8897 loss: 0.7618
+Epoch: 19  Train acc: 0.9728 loss: 0.0467  Val acc: 0.9478 loss: 0.3797  Test acc: 0.8794 loss: 0.8013
+New checkpoint
+Epoch: 20  Train acc: 0.9809 loss: 0.0317  Val acc: 0.9443 loss: 0.3406  Test acc: 0.8910 loss: 0.7248
+Epoch: 21  Train acc: 0.9811 loss: 0.0312  Val acc: 0.9461 loss: 0.3590  Test acc: 0.8917 loss: 0.7561
+Epoch: 22  Train acc: 0.9591 loss: 0.0606  Val acc: 0.9346 loss: 0.4453  Test acc: 0.8680 loss: 0.9033
+Epoch: 23  Train acc: 0.8345 loss: 0.2304  Val acc: 0.8143 loss: 0.6761  Test acc: 0.7527 loss: 1.2331
+Epoch: 24  Train acc: 0.9765 loss: 0.0383  Val acc: 0.9346 loss: 0.3681  Test acc: 0.8913 loss: 0.7490
+Epoch: 25  Train acc: 0.9826 loss: 0.0289  Val acc: 0.9372 loss: 0.3537  Test acc: 0.8963 loss: 0.7482
+Epoch: 26  Train acc: 0.9796 loss: 0.0327  Val acc: 0.9381 loss: 0.3774  Test acc: 0.8903 loss: 0.8342
+Epoch: 27  Train acc: 0.9802 loss: 0.0323  Val acc: 0.9363 loss: 0.3607  Test acc: 0.8881 loss: 0.8058
+Epoch: 28  Train acc: 0.9787 loss: 0.0343  Val acc: 0.9363 loss: 0.3987  Test acc: 0.8865 loss: 0.8210
+Epoch: 29  Train acc: 0.9796 loss: 0.0320  Val acc: 0.9390 loss: 0.3845  Test acc: 0.8885 loss: 0.8180
+Epoch: 30  Train acc: 0.9766 loss: 0.0380  Val acc: 0.9337 loss: 0.4111  Test acc: 0.8806 loss: 0.8434
+Epoch: 31  Train acc: 0.9843 loss: 0.0255  Val acc: 0.9425 loss: 0.3758  Test acc: 0.8922 loss: 0.7785
+Epoch: 32  Train acc: 0.9851 loss: 0.0242  Val acc: 0.9425 loss: 0.3713  Test acc: 0.8931 loss: 0.7798
+Epoch: 33  Train acc: 0.9851 loss: 0.0236  Val acc: 0.9416 loss: 0.3706  Test acc: 0.8943 loss: 0.7807
+Epoch: 34  Train acc: 0.9857 loss: 0.0231  Val acc: 0.9434 loss: 0.3697  Test acc: 0.8942 loss: 0.7813
+Epoch: 35  Train acc: 0.9854 loss: 0.0230  Val acc: 0.9416 loss: 0.3714  Test acc: 0.8945 loss: 0.7842
+Epoch: 36  Train acc: 0.9858 loss: 0.0227  Val acc: 0.9443 loss: 0.3690  Test acc: 0.8939 loss: 0.7878
+Epoch: 37  Train acc: 0.9856 loss: 0.0227  Val acc: 0.9408 loss: 0.3754  Test acc: 0.8938 loss: 0.7853
+Epoch: 38  Train acc: 0.9860 loss: 0.0228  Val acc: 0.9425 loss: 0.3699  Test acc: 0.8918 loss: 0.8023
+Epoch: 39  Train acc: 0.9863 loss: 0.0223  Val acc: 0.9416 loss: 0.3729  Test acc: 0.8925 loss: 0.7955
+Epoch: 40  Train acc: 0.9860 loss: 0.0223  Val acc: 0.9416 loss: 0.3715  Test acc: 0.8923 loss: 0.7978
+Epoch: 41  Train acc: 0.9863 loss: 0.0221  Val acc: 0.9434 loss: 0.3733  Test acc: 0.8926 loss: 0.7945
+Epoch: 42  Train acc: 0.9866 loss: 0.0218  Val acc: 0.9452 loss: 0.3718  Test acc: 0.8929 loss: 0.7956
+Epoch: 43  Train acc: 0.9864 loss: 0.0218  Val acc: 0.9434 loss: 0.3717  Test acc: 0.8923 loss: 0.8013
+Epoch: 44  Train acc: 0.9863 loss: 0.0216  Val acc: 0.9469 loss: 0.3709  Test acc: 0.8909 loss: 0.8087
+Epoch: 45  Train acc: 0.9858 loss: 0.0221  Val acc: 0.9425 loss: 0.3714  Test acc: 0.8922 loss: 0.8046
+Epoch: 46  Train acc: 0.9866 loss: 0.0215  Val acc: 0.9461 loss: 0.3729  Test acc: 0.8921 loss: 0.7996
+Epoch: 47  Train acc: 0.9861 loss: 0.0221  Val acc: 0.9452 loss: 0.3765  Test acc: 0.8915 loss: 0.7975
+Epoch: 48  Train acc: 0.9862 loss: 0.0217  Val acc: 0.9443 loss: 0.3776  Test acc: 0.8922 loss: 0.7977
+Epoch: 49  Train acc: 0.9865 loss: 0.0213  Val acc: 0.9469 loss: 0.3718  Test acc: 0.8921 loss: 0.7943
+Epoch: 50  Train acc: 0.9868 loss: 0.0212  Val acc: 0.9452 loss: 0.3734  Test acc: 0.8931 loss: 0.7979
